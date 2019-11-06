@@ -1,0 +1,62 @@
+/* See https://cameronjs.com/tailwindcss for more about Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+
+/*
+  Overriding styles or extracted components go here, see:
+
+  https://tailwindcss.com/docs/adding-base-styles
+  https://tailwindcss.com/docs/extracting-components
+*/
+
+.spec {
+  h2 {
+    @apply mt-8 mb-4 text-2xl text-blue-700 font-semibold;
+    &:first-child {
+      @apply mt-0;
+    }
+  }
+
+  h3 {
+    @apply font-semibold;
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  ol {
+    @apply list-decimal list-outside mx-8;
+
+    li {
+      @apply pl-2;
+    }
+  }
+
+  code {
+    @apply text-sm font-mono;
+  }
+
+  pre.highlight {
+    @apply bg-black text-white rounded py-1 px-2 overflow-x-auto;
+  }
+
+  a {
+    @apply text-blue-700 underline;
+    &:active {
+      @apply no-underline text-blue-900;
+    }
+  }
+}
+
+@tailwind utilities;
+
+/*
+  Completely custom CSS goes here, or add a new stylesheet and include it in application.pcss:
+
+    @import "tailwind.pcss";
+    @import "custom.css";
+
+  See https://tailwindcss.com/docs/adding-new-utilities for creating new Tailwind utilities
+*/
