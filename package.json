@@ -2,7 +2,7 @@
   "name": "semver.org",
   "version": "0.0.1",
   "scripts": {
-    "build": "webpack && postcss --verbose code/stylesheets/application.pcss -o publish/stylesheets/application.css",
+    "build": "$npm_execpath spec_to_html && webpack && postcss --verbose code/stylesheets/application.pcss -o publish/stylesheets/application.css",
     "clean": "del 'publish/!(images|favicon.*)'",
     "dev": "$npm_execpath serve & $npm_execpath watch",
     "netlify": "$npm_execpath watch & netlify dev",
