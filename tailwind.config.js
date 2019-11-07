@@ -2,6 +2,18 @@
 
 module.exports = {
   theme: {
+    fontFamily: {
+      mono: [
+        "Fira Code",
+        "Fira Mono",
+        "Menlo",
+        "Monaco",
+        "Consolas",
+        "Liberation Mono",
+        "Courier New",
+        "monospace"
+      ]
+    },
     linearGradients: theme => ({
       colors: theme("colors")
     }),
