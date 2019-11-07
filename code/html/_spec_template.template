@@ -1,0 +1,32 @@
+@@layout("application")
+
+<div class="bg-blue-400 bg-gradient-bl-blue-600">
+  <header class="flex flex-between items-center p-4 text-left">
+    <div class="flex flex-1 items-center">
+      <h1 class="text-xl font-semibold tracking-tight text-white leading-none lg:leading-normal">
+        Semantic Versioning
+      </h1>
+      <h2 class="ml-2 text-base font-normal text-blue-200">
+        2.0.0
+      </h2>
+    </div>
+    <nav class="">
+      <ul class="flex text-white text-sm">
+        <li class="mx-2 py-1 px-3 border border-blue-300 rounded"><a href="#">Version</a></li>
+        <li class="mx-2 py-1 px-3 border border-blue-300 rounded"><a href="#">Language</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  {{ hero }}
+</div>
+
+<main class="spec">
+  <div class="w-full lg:max-w-4xl mx-auto bg-white shadow p-8 spec">
+    {{ spec }}
+  </div>
+</main>
+
+<footer class="py-4 text-center text-sm w-full lg:max-w-4xl mx-auto text-center">
+  <a href="https://github.com/semver/semver">GitHub</a>
+</footer>

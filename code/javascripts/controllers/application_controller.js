@@ -6,21 +6,21 @@ export default class extends Controller {
   connect() {
     for (let el of document.getElementsByTagName("code")) {
       if (el.parentElement.nodeName === "PRE") {
-        let container = el.parentElement.parentElement;
+        let container = el.parentElement;
         let link = document.createElement("a");
 
         link.href = "#";
         link.classList.add("block", "text-right", "text-sm");
         link.dataset.action = "click->application#copy";
         link.textContent = "Copy to Clipboard";
-        container.appendChild(link);
+        container.parentElement.insertBefore(link, container.nextSibling);
       }
     }
   }
 
   copy(event) {
     event.preventDefault();
-    this.copyContent(event.target.previousSibling.previousSibling.children[0]);
+    this.copyContent(event.target.previousSibling.children[0]);
   }
 
   copyContent(target) {
