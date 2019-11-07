@@ -4,3 +4,8 @@ publish/*
 !publish/images
 !publish/favicon.*
 yarn-error.log
+
+code/html/*
+!code/html/layouts
+!code/html/*.template
+!code/html/404.html
