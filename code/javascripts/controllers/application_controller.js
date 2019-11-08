@@ -41,13 +41,20 @@ export default class extends Controller {
 
   showVersions(event) {
     event.preventDefault();
+    event.stopPropagation();
     this.versionsTarget.classList.toggle("hidden");
     this.languagesTarget.classList.add("hidden");
   }
 
   showLanguages(event) {
     event.preventDefault();
+    event.stopPropagation();
     this.languagesTarget.classList.toggle("hidden");
     this.versionsTarget.classList.add("hidden");
+  }
+
+  closeAllMenus(event) {
+    this.versionsTarget.classList.add("hidden");
+    this.languagesTarget.classList.add("hidden");
   }
 }
