@@ -10,7 +10,7 @@
         </ul>
       </div>
     </li>
-    <li class="mx-4 bg-blue-400 border border-blue-300 rounded">
+    <li class="mx-4 px-2 bg-blue-400 border border-blue-300 rounded">
       <div class="w-32">
         <a href="#" class="block py-1 px-3" data-action="click->application#showLanguages"
           >Language</a
