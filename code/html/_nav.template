@@ -1,0 +1,10 @@
+<nav class="">
+  <ul class="flex text-white text-sm">
+    <li class="mx-2 py-1 px-3 border border-blue-300 rounded">
+      <a href="#">Version</a>
+    </li>
+    <li class="mx-2 py-1 px-3 border border-blue-300 rounded">
+      <a href="#">Language</a>
+    </li>
+  </ul>
+</nav>
