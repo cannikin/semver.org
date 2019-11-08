@@ -1,10 +1,27 @@
-<nav class="">
-  <ul class="flex text-white text-sm">
-    <li class="mx-2 py-1 px-3 border border-blue-300 rounded">
-      <a href="#">Version</a>
+<nav class="absolute top-0 right-0 mt-4">
+  <ul class="flex items-start text-white text-sm text-center">
+    <li class="mx-4 bg-blue-400 border border-blue-300 rounded">
+      <div class="w-24">
+        <a href="#" class="block py-1 px-3" data-action="click->application#showVersions"
+          >Version</a
+        >
+        <ul class="hidden block my-2 text-sm leading-loose" data-target="application.versions">
+          {{ versions }}
+        </ul>
+      </div>
     </li>
-    <li class="mx-2 py-1 px-3 border border-blue-300 rounded">
-      <a href="#">Language</a>
+    <li class="mx-4 bg-blue-400 border border-blue-300 rounded">
+      <div class="w-32">
+        <a href="#" class="block py-1 px-3" data-action="click->application#showLanguages"
+          >Language</a
+        >
+        <ul
+          class="hidden my-2 text-sm leading-loose text-center"
+          data-target="application.languages"
+        >
+          {{ languages }}
+        </ul>
+      </div>
     </li>
   </ul>
 </nav>

@@ -3,6 +3,10 @@
 import { Controller } from "stimulus";
 
 export default class extends Controller {
+  static get targets() {
+    return ["versions", "languages"];
+  }
+
   connect() {
     for (let el of document.getElementsByTagName("code")) {
       if (el.parentElement.nodeName === "PRE") {
@@ -33,5 +37,17 @@ export default class extends Controller {
     window.getSelection().addRange(range);
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
+  }
+
+  showVersions(event) {
+    event.preventDefault();
+    this.versionsTarget.classList.toggle("hidden");
+    this.languagesTarget.classList.add("hidden");
+  }
+
+  showLanguages(event) {
+    event.preventDefault();
+    this.languagesTarget.classList.toggle("hidden");
+    this.versionsTarget.classList.add("hidden");
   }
 }
