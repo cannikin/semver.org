@@ -1,7 +1,7 @@
 @@layout("application")
 
 <div class="bg-blue-400 bg-gradient-bl-blue-600">
-  <header class="flex flex-between items-center p-4 text-left">
+  <header class="p-4 text-left">
     <div class="flex flex-1 items-center">
       <h1 class="text-xl font-semibold tracking-tight text-white leading-none lg:leading-normal">
         <a href="/">Semantic Versioning</a>
