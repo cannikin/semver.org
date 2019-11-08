@@ -7,13 +7,16 @@ export default class extends Controller {
     for (let el of document.getElementsByTagName("code")) {
       if (el.parentElement.nodeName === "PRE") {
         let container = el.parentElement;
+        let div = document.createElement("div");
         let link = document.createElement("a");
 
+        div.classList.add("text-right");
         link.href = "#";
         link.classList.add("block", "text-right", "text-sm");
         link.dataset.action = "click->application#copy";
         link.textContent = "Copy to Clipboard";
-        container.parentElement.insertBefore(link, container.nextSibling);
+        div.appendChild(link);
+        container.parentElement.insertBefore(div, container.nextSibling);
       }
     }
   }
