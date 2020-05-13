@@ -10,7 +10,7 @@
         2.0.0
       </h2>
     </div>
-    @@include("{{ locale }}/nav.html")
+    @@include("{{ locale }}/nav")
   </header>
 
   {{ hero }}
