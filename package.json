@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "$npm_execpath spec_to_html && webpack && postcss --verbose code/stylesheets/application.pcss -o publish/stylesheets/application.css",
-    "clean": "del 'publish/!(images|favicon.*)' && del 'code/html/!(layouts|*.template|404.html)'",
+    "clean": "del 'publish/!(images|favicon.*)' 'code/html/!(layouts|*.template|404.html)'",
     "dev": "$npm_execpath serve & $npm_execpath watch",
     "netlify": "$npm_execpath watch & netlify dev",
     "spec_to_html": "node lib/spec_to_html.js",
