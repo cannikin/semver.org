@@ -20,6 +20,8 @@
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.7.6",
     "cameronjs-html-webpack-plugin": "^0.5.1",
+    "markdown-it": "^11.0.0",
+    "markdown-it-toc-and-anchor": "^4.2.0",
     "marked": "^1.0.0",
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",

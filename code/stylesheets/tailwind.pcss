@@ -44,6 +44,26 @@
     @apply font-semibold;
   }
 
+  h1 a {
+    @apply hidden;
+  }
+
+  h2 {
+    @apply -ml-5;
+  }
+
+  h1 a, h2 a, h3 a {
+    @apply transition transition-colors duration-100 text-gray-200 no-underline;
+  }
+
+  h1:hover a, h2:hover a {
+    @apply text-blue-700;
+  }
+
+  h3 a {
+    display: none;
+  }
+
   p {
     @apply my-4;
   }
