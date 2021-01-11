@@ -16,7 +16,7 @@
           ></a
         >
         <ul
-          class="hidden my-2 text-sm leading-loose text-center"
+          class="hidden my-2 text-sm leading-loose text-center max-h-60 overflow-y-scroll"
           data-target="application.languages"
         >
           {{ languages }}
