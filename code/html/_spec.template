@@ -5,7 +5,7 @@
     <div class="relative max-w-6xl mx-auto md:flex flex-1 justify-between items-start">
       <div class="flex justify-center md:justify-left items-center">
         <h1 class="text-xl font-semibold tracking-tight text-white leading-none lg:leading-normal">
-          <a href="/">Semantic Versioning</a>
+          <a href="/" class="block w-32"><img src="/images/logo.png" class="max-w-full"></a>
         </h1>
       </div>
       @@include("{{ locale }}/nav")
