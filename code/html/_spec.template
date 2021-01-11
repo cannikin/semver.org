@@ -7,9 +7,6 @@
         <h1 class="text-xl font-semibold tracking-tight text-white leading-none lg:leading-normal">
           <a href="/">Semantic Versioning</a>
         </h1>
-        <h2 class="ml-2 text-base font-normal text-blue-200">
-          2.0.0
-        </h2>
       </div>
       @@include("{{ locale }}/nav")
     </div>
